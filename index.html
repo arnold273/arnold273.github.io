@@ -56,12 +56,15 @@
 		height: 100%;
 		margin: 0 auto -30px;
 		}
-		#push,
-		#footer {
+		#push {
 		height: 30px;
 		}
 		h1.visible {visibility: visible}
 		h1.hidden {visibility: hidden}
+		#home .img-polaroid,
+		#tab5 .img-polaroid {
+		box-sizing: border-box;
+		}
 		.abstract-toggle {
 		padding: 0;
 		border: 0;
@@ -164,7 +167,7 @@
 								<FONT COLOR="Red"><h3>I moved to Columbia University. <br>This homepage is no longer updated.</h3>
 									<h2>My new homepage is <a href="https://www.cs.bgu.ac.il/~arnoldf/" target="_blank">here</a>. </h2></FONT>
 								-->
-								Last update: 9 - September - 2026 (d-m-y).
+								Last update: 10 - September - 2026 (d-m-y).
 								<h3>About Me</h3>
 								<p>
 								I am a faculty member at the <a href="https://cs.biu.ac.il/" target="_blank">Department of Computer Science and Artificial Intelligence</a> at <a href="https://www.biu.ac.il/en" target="_blank">Bar-Ilan University</a>.
@@ -365,6 +368,9 @@
 					
 					<div class="tab-pane fade" id="tab3">
 						<H2>Publications</H2>
+						<p>
+						[<a href="https://dblp.org/pid/135/4993.html" target="_blank">DBLP</a>] [<a href="https://scholar.google.com/citations?hl=en&amp;user=ugWBYxsAAAAJ" target="_blank">Google Scholar</a>]
+						</p>
 						<ol reversed>
 						<!--<FONT COLOR="Red">To appear in SODA 2025.</FONT><br>-->	
 							<li><b> How to Walk a Dog in Parallel: on Parallel Computation of the Discrete Fréchet Distance </b> <br>
@@ -390,8 +396,9 @@
 									</li>							
 							<li><b> Directed Low Diameter Decomposition for Structured Digraphs </b> <br>
 									Shinwoo An, Arnold Filtser <br>										
-									<FONT COLOR="Red">To appear in APPROX 2026.</FONT><br>												
+									In APPROX 2026.<br>
 									<button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-2606-31560">[ <span class="abstract-label">+Abstract</span> ]</button> [<a href="https://arxiv.org/abs/2606.31560"> arXiv version </a>]
+									[<a href="https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2026.16"> Conference version </a>]
 									<div id="abstract-2606-31560" class="paper-abstract" hidden>
 									<!-- Abstract from https://arxiv.org/abs/2606.31560v1 -->
 									<p>Low diameter decompositions, or LDDs for short, are a fundamental primitive in the design of efficient graph algorithms. Roughly speaking, an LDD is a distribution over partitions of the vertices into bounded-diameter clusters such that nearby vertices are likely to be clustered together. Recently, there has been growing interest in lifting the notion of LDDs into <em>directed graphs</em>. In particular, there are two natural directed analogues. The first is a directed LDD, where after removing a random subset of edges, every strongly connected component has a small diameter. The second is a quasipartition, which imposes the stronger requirement that whenever one vertex can still reach another after the edge removal, the two vertices must be close in the original directed metric. Every quasipartition yields an LDD, but the converse does not necessarily hold.</p>
@@ -401,8 +408,9 @@
 									</li>							
 							<li><b> Bi-Lipschitz extensions and outlier embeddings into trees </b> <br>
 									Shuchi Chawla, Arnold Filtser, Kristin Sheridan, Yoni Trachtenberg <br>										
-									<FONT COLOR="Red">To appear in APPROX 2026.</FONT><br>												
+									In APPROX 2026.<br>
 									<button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-2601-15470">[ <span class="abstract-label">+Abstract</span> ]</button> [<a href="https://arxiv.org/abs/2601.15470"> arXiv version </a>]
+									[<a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.APPROX/RANDOM.2026.17"> Conference version </a>]
 									<div id="abstract-2601-15470" class="paper-abstract" hidden>
 									<!-- Abstract from https://arxiv.org/abs/2601.15470v4 -->
 									<p>We develop low distortion embeddings with outliers from arbitrary metrics into hierarchically separated trees (HSTs). In particular, we develop an efficient algorithm that for any $ε&gt;0$, given an input metric $(X,d)$, and a probabilistic embedding of all but $k$ points from $X$ into HSTs with distortion $c$, samples from a probabilistic embedding of all but $O(\frac{k}ε\log k)$ points into HSTs that achieves distortion at most $(32+ε)c$.</p>
@@ -541,8 +549,9 @@
 									</div>
 									</li>						
 							<li><b> Light, Reliable Spanners </b> <br>
-									Arnold Filtser, Yuval Gitlitz, Ofer Neiman<br>	
-									In SOCG 2024<br>									
+									Arnold Filtser, Yuval Gitlitz, Ofer Neiman<br>
+									In SOCG 2024<br>
+									<FONT COLOR="Red">To appear in SIDMA 2027.</FONT><br>
 									<!--<FONT COLOR="Red">To appear in SOCG 2024.</FONT><br>-->										
 									<button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-2307-16612">[ <span class="abstract-label">+Abstract</span> ]</button> [<a href="https://arxiv.org/abs/2307.16612"> arXiv version </a>]
 									[<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol293-socg2024/LIPIcs.SoCG.2024.56/LIPIcs.SoCG.2024.56.pdf"> Conference version </a>]									
@@ -1234,8 +1243,10 @@ The first is the notion of scaling distortion, which provides improved distortio
 			<br>
 			<img src="./family.JPG" class="img-polaroid">
 			-->
-			<img src="./Family26-small.jpg" class="img-polaroid" width="1800" height="1200" loading="lazy" decoding="async" alt="Family, 2026"><br>
-			<img src="./family4-small.jpg" class="img-polaroid" width="946" height="1419" loading="lazy" decoding="async" alt="Family photo">
+			<div class="span9">
+				<img src="./Family26-small.jpg" class="img-polaroid" width="1800" height="1200" loading="lazy" decoding="async" alt="Family, 2026"><br>
+				<img src="./family4-small.jpg" class="img-polaroid" width="946" height="1419" loading="lazy" decoding="async" alt="Family photo">
+			</div>
 	</div>
 	
 	
@@ -1245,11 +1256,6 @@ The first is the notion of scaling distortion, which provides improved distortio
 		<div id="push"></div>
 	</div> <!-- /wrap -->
 	<div id="push"></div>
-    <div id="footer">
-		<div class="container" style="color: #777;">
-			<p>Bootstrapped personal page theme by <a href="http://www.cs.bgu.ac.il/~boazar" rel="author">Boaz Arad</a>, get yours <a href="http://www.cs.bgu.ac.il/~boazar/#tips">here</p>
-      </div>
-	</div>
 
     <!-- Le javascript
     ================================================== -->
